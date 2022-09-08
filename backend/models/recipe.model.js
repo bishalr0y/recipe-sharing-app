@@ -14,6 +14,10 @@ const recipeSchema = new Schema({
     calories: {
         type: Number,
         required: true
+    },
+    author: {
+        type: String,
+        required: true
     }
 },
 {
