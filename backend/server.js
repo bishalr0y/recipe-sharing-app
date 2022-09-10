@@ -3,7 +3,8 @@ const cors = require('cors')
 const colors = require('colors')
 const mongoose = require('mongoose')
 const dotenv = require('dotenv').config()
-const recipeRoutes = require('./routes/reciple.routes')
+const recipeRoutes = require('./routes/recipe.routes')
+const userRoutes = require('./routes/user.routes')
 
 const app = express()
 
@@ -18,6 +19,7 @@ app.use(express.urlencoded({ extended: true }))
 
 
 app.use('/api/recipes', recipeRoutes)
+app.use('/api/users', userRoutes);
 
 
 // Connect to the DB
