@@ -10,7 +10,7 @@ const router = express.Router()
 router.route('/').get(protect, getRecipes)
 
 // create a recipe
-router.route('/').get(protect, createRecipe)
+router.route('/').post(protect, createRecipe)
 
 // delete a recipe
 router.route('/:id').delete(protect, deleteRecipe)

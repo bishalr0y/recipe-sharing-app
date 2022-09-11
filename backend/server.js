@@ -8,7 +8,7 @@ const userRoutes = require('./routes/user.routes')
 
 const app = express()
 
-const PORT = process.env.PORT || 4000
+const PORT = 5000
 
 app.use(cors())
 

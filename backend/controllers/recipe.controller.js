@@ -3,7 +3,7 @@ const Recipe = require('../models/recipe.model')
 
 //  creating a recipe
 const createRecipe = async (req, res) => {
-    const {title, ingredients, calories, author} = req.body
+    const {title, ingredients, calories} = req.body
 
     const emptyFields = []
 
@@ -16,9 +16,6 @@ const createRecipe = async (req, res) => {
     if(!calories) {
         emptyFields.push(calories)
     }
-    if(!author) {
-        emptyFields.push(author)
-    }
 
     if(emptyFields.length > 0) {
         return res.status(400).json({ error: 'Please fill all the fields'})
@@ -29,7 +26,6 @@ const createRecipe = async (req, res) => {
             title: title,
             ingredients: ingredients,
             calories: calories,
-            author: author
         })
         res.status(200).json(recipe)
     } catch(error) {
