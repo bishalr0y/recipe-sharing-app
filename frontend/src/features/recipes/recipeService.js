@@ -28,9 +28,23 @@ const getRecipes = async (token) => {
     return response.data
 }
 
+// Delete recipe
+const deleteRecipe = async (recipeId, token) => {
+    const config = {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    }
+  
+    const response = await axios.delete(API_URL + recipeId, config)
+  
+    return response.data
+  }
+
 const recipeService = {
     createRecipe,
-    getRecipes
+    getRecipes,
+    deleteRecipe
 }
 
 export default recipeService
