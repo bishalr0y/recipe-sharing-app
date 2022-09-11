@@ -20,7 +20,9 @@ const Dashboard = () => {
       navigate('/login')
     }
 
-    //dispatch(getRecipes())
+    if(!recipes)
+      dispatch(getRecipes())
+    
     return () => {
       dispatch(reset())
     }
@@ -30,7 +32,6 @@ const Dashboard = () => {
   if(isLoading) {
     return <Spinner />
   }
-  
   return (
     <>
       <section className='heading'>
