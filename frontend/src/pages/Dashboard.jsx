@@ -3,7 +3,7 @@ import {useNavigate} from 'react-router-dom'
 import {useSelector, useDispatch} from 'react-redux'
 import RecipeForm from "../components/RecipeForm"
 import Spinner from '../components/Spinner'
-import { getRecipes, reset } from '../features/recipes/recipeSlice'
+import {getRecipes} from '../features/recipes/recipeSlice'
 import RecipeItem from '../components/RecipeItem'
 
 const Dashboard = () => {
