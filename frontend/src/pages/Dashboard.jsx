@@ -36,7 +36,7 @@ const Dashboard = () => {
   return (
     <>
       <section className='heading'>
-        <h1>Welcome {user && user.name}</h1>
+        <h1>Welcome {user && user.name}!</h1>
          <p>Recipes Feed</p>
       </section>
       <RecipeForm /> 
