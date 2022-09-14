@@ -1,5 +1,5 @@
 <h2>Recipe-Share🔁</h2>
-This is a recipe sharing web application 🍅 that is made with MERN stack. The frontend consits of adding and deleting recipes that uses Redux toolkit for global state management ⚛️. The authentication is powered by JWT and local storage is being implemented so that the user won't have login again and again ✨. The Node.js backend uses MongoDB as the database to add, delete recipes and for authentication 🔐.
+This is a recipe sharing web application 🍅 that is made with MERN stack. The frontend consists of adding and deleting recipes that uses Redux toolkit for global state management ⚛️. The authentication is powered by JWT and local storage is being implemented so that the user won't have login again and again ✨. The Node.js backend uses MongoDB as the database to add, delete recipes and for authentication 🔐.
 <br>
 
 
